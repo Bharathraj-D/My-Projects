@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>
+            Home page
+        </title>
+        <link rel="stylesheet" href="AccountCreate.css">
+         
+    </head>
+    <body>
+        <script src="AccountCreate.js" defer></script>
+        <div class="container">
+        <div class="header">
+            <img src="Images/image.png" class="bank-logo">
+            <p class="bank-title">TRUST ONLY BANK</p>
+            <a href="login.html"><button class="logout-logo">Logout</button></a>
+        </div>
+        <div class="body-grid">
+            <div class="create-account"> 
+                <h2 style="color: green; font-family: Arial, Helvetica, sans-serif;visibility: hidden;">Account Created Successfully!!!</h2>
+            <form onsubmit="createAccount(event)">
+              <p class="input-titles" >Enter the Holder Name:</p>
+              <input required id="holderName" type="text" class="inputs-amounts">
+              <p class="input-titles">Enter the Account Type:</p>
+              <input required id="accountType" type="text" class="inputs-amounts">
+              <p class="input-titles">Enter the Branch:</p>
+              <input required id="branch" type="text" class="inputs-amounts"><br>
+              <p class="input-titles">Enter the Phone No:</p>
+              <input required id="phoneNo" type="number" class="inputs-amounts" min="1000000000" max="9999999999"><br>
+              <p class="input-titles">Enter the Aadhar No:</p>
+              <input required id="aadharNo" type="number" class="inputs-amounts" min="100000000000" max="999999999999"><br>
+              <p class="input-titles">Enter the Address:</p>
+              <input required  id="address" type="text" class="inputs-amounts"><br>
+              
+              <button class="send-money" type="submit">Create</button>
+            </form>
+            <a href="Accounts.html" style="text-decoration: none;"><button class="cancel-money">Cancel</button></a>
+            </div>
+        </div>
+        </div>
+       
+    </body>
+</html>

@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>
+            Home page
+        </title>
+        <link rel="stylesheet" href="Account.css">
+    </head>
+    <body>
+      <script src="Account.js" defer></script>
+        <div class="container">
+        <div class="header">
+            <img src="Images/image.png" class="bank-logo">
+            <p class="bank-title">TRUST ONLY BANK</p>
+            <a href="login.html" style="text-decoration: none;"><button class="logout-logo">Logout</button></a>
+        </div>
+        <div class="body-grid">
+           <div class="top-body">
+             <div ><img src="Images/userlogo.png" class="top-body-user-logo"></div>
+             <div><p class="top-body-name" id="nameDetails">Name</p></div>
+             <div>
+                <p class="top-balance" >Balance:</p>
+                <p class="top-balance" id="balance" style="margin: 0;">10000</p>
+            </div>
+           </div>
+           <div class="details-grid">
+            <div class="inner-details-grid">
+              <div class="inner-details-grid-details">
+                <p class="firsttext">Account NO:</p>
+                <p id="accountNo">273737</p>
+              </div>
+                
+            </div>
+           
+            <div class="inner-details-grid">
+              <div class="inner-details-grid-details">
+                <p class="firsttext">Branch:</p>
+                <p id="branch"></p>
+              </div>
+            </div>
+            <div  class="inner-details-grid">
+              <div class="inner-details-grid-details">
+                <p class="firsttext">Account Type:</p>
+                <p id="accounType"></p>
+              </div>
+                
+            </div>
+            <div  class="inner-details-grid">
+              <div class="inner-details-grid-details">
+                 <p class="firsttext">Aadhar NO:</p>
+                <p id="aadharNo"></p>
+              </div>  
+              
+            </div>
+            <div  class="inner-details-grid">
+              <div class="inner-details-grid-details">
+                 <p class="firsttext">Phone No:</p>
+                <p id="phoneNo"></p>
+              </div>
+               
+            </div>
+             <div  class="inner-details-grid">
+              <div class="inner-details-grid-details">
+                <p class="firsttext">Address:</p>
+                <p id="address">wwiiei</p>
+              </div>
+            </div>
+           </div>
+           <div  class="transaction-detail-grid">
+            <p class="top-body-name">Transaction Details</p>
+            <div class="transaction-details-grid">
+            <table id="transactions" border="1" style="font-size: 18px; text-align: center;">
+              <tr>
+                <th>Transaction Id</th>
+                <th>Type</th>
+                <th>Account No</th>
+                <th>Amount</th>
+                <th>Current Balance</th>
+              </tr>
+            </table>
+            </div>
+          </div>
+        </div>
+        <div><a href="Accounts.html" style="text-decoration: none;"><button class="back-button">Back</button></a></div>
+      </div>
+    </body>
+</html>

@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>
+            Home page
+        </title>
+        <link rel="stylesheet" href="Accounts.css">
+    </head>
+    <body>
+        <script src="Accounts.js" defer></script>
+        <div class="container">
+        <div class="header">
+            <img src="Images/image.png" class="bank-logo">
+            <p class="bank-title">TRUST ONLY BANK</p>
+             <a href="login.html" style="text-decoration: none;"><button class="logout-logo">Logout</button></a>
+        </div>
+        <div>
+            <div class="account-body">
+                <h1>Accounts</h1>
+                <ul id="accountList">
+                    <li>
+                    <div class="account">
+                 <p class="account-inside-para">Branch</p>
+                 <p class="account-inside-para">Account No</p>
+                 <p class="account-inside-para">Name</p>                        
+                    </div>
+                     </li>
+                </ul>
+            </div>
+            <div style="display:flex; justify-content: space-between;">
+               <a href="AccountCreate.html" style="text-decoration: none;"><button class="creation-button">Create Account</button></a>
+              <a href="AccountDelete.html" style="text-decoration: none;"><button class="delete-button">Delete Account</button></a>
+            </div>
+        </div>
+        <div style="display: block; text-align:center;margin: 40px;"> <a href="home.html" style="text-decoration: none;"><button class="back-button">Back</button></a></div>
+        </div> 
+    </body>
+</html>
