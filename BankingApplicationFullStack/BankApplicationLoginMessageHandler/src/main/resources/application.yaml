@@ -1,0 +1,39 @@
+server:
+  port: 8081
+spring:
+  application:
+    name: BankApplicationLoginMessageHandler
+  datasource:
+    url: jdbc:mysql://localhost:3306/BankingSystem
+    username: root
+    password: bharathff15
+    driverClassName: com.mysql.cj.jdbc.Driver
+  jpa:
+    show-sql: true
+    hibernate:
+      ddl-auto: update
+    properties:
+      hibernate:
+        dialect: org.hibernate.dialect.MySQLDialect
+  kafka:
+    bootstrap-servers: localhost:9094
+    consumer:
+      group-id: login-group
+      key-deserializer: org.apache.kafka.common.serialization.StringDeserializer
+      value-deserializer: org.springframework.kafka.support.serializer.JsonDeserializer
+      auto-offset-reset: latest
+      properties:
+        spring.json.value.default.type: "com.banking.bankapplicationloginmessagehandler.LoginMessageDTO"
+        spring.json.use.type.headers: false
+        spring.json.trusted.packages: "*"
+  mail:
+    host: smtp-relay.brevo.com
+    port: 587
+    username: aa9273001@smtp-brevo.com
+    password: gWOUDMxnBIfqpEJY
+    properties:
+      mail:
+        smtp:
+          auth: true
+          starttls:
+            enable: true
